@@ -1,4 +1,10 @@
 workflows:
+  name: hypershift-hostedcluster-workflow
+  version: 4.15.0
+  parameters:
+      name: HYPERSHIFT_NODE_COUNT
+      type: integer
+      required: true
   acm-ipi-aws-wait:
     platform: aws
     base_images:
